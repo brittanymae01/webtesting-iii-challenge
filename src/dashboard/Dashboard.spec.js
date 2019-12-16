@@ -6,12 +6,11 @@ import { render } from '@testing-library/react';
 import Display from '../display/Display'
 import Controls from '../controls/Controls'
 
-test('Renders display component', () => {
-    const displayTree = render(<Display />)
-    expect(displayTree).toMatchSnapshot();
-})
+test('Display renders without crashing', () => {
+    render(<Display />)
+});
 
-test('Renders controls component', () => {
-    const controlsTree = render(<Controls />)
-    expect(controlsTree).toMatchSnapshot();
-})
+test('Controls renders without crashing', () => {
+    render(<Controls />)
+});
+
